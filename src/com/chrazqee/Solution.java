@@ -1,3 +1,4 @@
+package src.com.chrazqee;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,7 +13,7 @@ public class Solution {
             if (dic.containsKey(c)){
                 dic.put(c, dic.get(c) + 1);
             } else {
-                dic.put(c, 0);
+                dic.put(c, 1);
             }
         }
 
@@ -25,10 +26,10 @@ public class Solution {
         return ans;
     } 
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        String s = "aaabbb";
-        int k = 5;
-        solution.takeCharacters(s, k);
-    }
+    // public static void main(String[] args) {
+    //     Solution solution = new Solution();
+    //     String s = "aaabbb";
+    //     int k = 5;
+    //     solution.takeCharacters(s, k);
+    // }
 }
